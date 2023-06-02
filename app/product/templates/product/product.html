@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bread-inner">
+					<ul class="bread-list">
+						<li><a href="{% url 'index' %}">Acceuil<i class="ti-arrow-right"></i></a></li>
+						<li class="active"><a href="#">Produits</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Breadcrumbs -->
+
+<!-- Product Style -->
+<section class="product-area shop-sidebar shop section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-12">
+				<div class="shop-sidebar">
+						<!-- Single Widget -->
+						<div class="single-widget category">
+							<h3 class="title">Categories</h3>
+							<ul class="categor-list">
+								{% for category in categories %}
+								<li><a href="{% url 'product' category %}">{{ category }}</a></li>	
+								{% endfor %}
+
+								{% for category in more_categories %}
+								<li><a href="{% url 'product' category %}">{{ category }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+						<!--/ End Single Widget -->
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-12">
+				<div class="row">
+					{% for product in products %}
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="single-product">
+							<div class="product-img">
+								<a href="#">
+									<img class="default-img" src="{% static 'index/images/carte-de-visite.jpg' %}" alt="#">
+									<img class="hover-img" src="{% static 'index/images/carte-de-visite.jpg' %}" alt="#">
+								</a>
+							</div>
+							<div class="product-content">
+								<h3><a href="#">{{ product.name }}</a></h3>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End Product Style 1  -->	
+{% endblock content %}
