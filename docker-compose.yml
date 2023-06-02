@@ -4,7 +4,7 @@ version: '3.8'
 services:
   web:
     build: ./app
-    command: gunicorn j2lprintable.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn j2lprintable.wsgi:application --bind 0.0.0.0:8000 --noreload
     volumes:
       - static_volume:/home/app/web/staticfiles
       - media_volume:/home/app/web/mediafiles
