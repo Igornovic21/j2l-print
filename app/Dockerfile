@@ -18,7 +18,7 @@ ENV PYTHONUNBUFFERED 1
 RUN pip install --upgrade pip
 RUN pip install flake8
 COPY . .
-RUN flake8 --ignore=E501,E302,E225,F401,W293,W292,W291 .
+RUN flake8 --exclude .
 
 # install dependencies
 COPY ./requirements.txt .
