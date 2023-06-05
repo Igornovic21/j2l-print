@@ -1,0 +1,984 @@
+{
+    "VARTICLE_18636_": {
+        "name": "Couleur du tour de cou",
+        "type": "select",
+        "default": "",
+        "values": {
+            "4": "Blanc",
+            "1": "Bleu",
+            "7": "Gris",
+            "6": "Jaune",
+            "3": "Noir",
+            "2": "Rouge",
+            "5": "Vert"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "153"
+    },
+    "VARTICLE_18828_": {
+        "name": "Accessoires",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "1": "Tour de cou",
+            "2": "Overlay"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "18"
+    },
+    "VARTICLE_18632_": {
+        "name": "Mod\u00e8le",
+        "type": "select",
+        "default": "16",
+        "values": {
+            "16": "MF1 S50 compatible (1 Kbytes)",
+            "18": "Ultralight (64 bytes)",
+            "55": "125 Khz Read Only",
+            "56": "NFC - NTAG213",
+            "47": "SLE4442 (1 Kbytes)"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "1"
+    },
+    "VARTICLE_18633_": {
+        "name": "Epaisseur (mm)",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "1": "0.76 (norme ISO)",
+            "2": "0.5",
+            "3": "0.82",
+            "5": "15"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "65"
+    },
+    "VARTICLE_18634_": {
+        "name": "Lamination",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "1": "Brillante",
+            "2": "Mate"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "171"
+    },
+    "VARTICLE_18620_": {
+        "name": "Support",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "1": "PVC blanc",
+            "6": "PVC blanc r\u00e9imprimable",
+            "4": "PVC blanc biod\u00e9gradable",
+            "2": "PVC transparent",
+            "3": "PVC transparent d\u00e9poli",
+            "5": "Polyester"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "40"
+    },
+    "VARTICLE_18723_": {
+        "name": "Format",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "1": "Pr\u00e9d\u00e9fini (Carr\u00e9, Rond, etc.)",
+            "2": "Sur mesure"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "70"
+    },
+    "VARTICLE_18722_": {
+        "name": "Format pr\u00e9d\u00e9fini",
+        "type": "select",
+        "default": "",
+        "values": {
+            "13": "3,5 x 12cm (r\u00e8gle)",
+            "14": "3,5 x 21cm (r\u00e8gle)",
+            "15": "5 x 31cm (r\u00e8gle)",
+            "7": "4,5 x 7cm",
+            "4": "5 x 5cm",
+            "5": "5,4 x 5,4cm",
+            "8": "6 x 9cm",
+            "9": "7 x 10cm",
+            "10": "7 x 13cm",
+            "6": "9,5 x 9,5cm",
+            "11": "11 x 15,5cm",
+            "1": "Rond 4,5cm",
+            "2": "Rond 7,5cm",
+            "20": "8,5 x 5,4cm",
+            "16": "8,5 x 5,4cm + mini carte",
+            "17": "8,5 x 5,4  + 2 mini cartes verticales (avec perfo.)",
+            "18": "8,5 x 5,4  + 2 mini cartes horizontales (avec perfo.)",
+            "19": "8,5 x 5,4  + 3 mini cartes verticales (avec perfo.)",
+            "21": "Mini carte 2,8 x 5,4cm",
+            "22": "Tri cartes 8,5 x 5,4cm"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "110"
+    },
+    "VARTICLE_18605_": {
+        "name": "Hauteur (cm)",
+        "type": "float",
+        "default": "",
+        "values": false,
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "127"
+    },
+    "VARTICLE_18606_": {
+        "name": "Largeur (cm)",
+        "type": "float",
+        "default": "",
+        "values": false,
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "142"
+    },
+    "VARTICLE_18608_": {
+        "name": "Quantit\u00e9 (du m\u00eame visuel)",
+        "type": "float",
+        "default": "1000",
+        "values": false,
+        "readonly": false,
+        "quantity": true,
+        "production_time": false,
+        "area": "1",
+        "position": "173"
+    },
+    "VARTICLE_18701_": {
+        "name": "Code-barres unitaire",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "48"
+    },
+    "VARTICLE_18703_": {
+        "name": "Zone d'\u00e9criture",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "183"
+    },
+    "VARTICLE_18704_": {
+        "name": "Vernis s\u00e9lectif",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "175"
+    },
+    "VARTICLE_19055_": {
+        "name": "Vernis s\u00e9lectif 3D",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "177"
+    },
+    "VARTICLE_18702_": {
+        "name": "Personnalisation unitaire",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "156"
+    },
+    "VARTICLE_18705_": {
+        "name": "Embossage",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "185"
+    },
+    "VARTICLE_18706_": {
+        "name": "Overlay",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "76"
+    },
+    "VARTICLE_18708_": {
+        "name": "Dorure \u00e0 chaud",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "180"
+    },
+    "VARTICLE_18707_": {
+        "name": "Bande magn\u00e9tique",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "158"
+    },
+    "VARTICLE_18709_": {
+        "name": "Perforation",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "189"
+    },
+    "VARTICLE_19790_": {
+        "name": "Attache badge",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "191"
+    },
+    "VARTICLE_18710_": {
+        "name": "Couleur Pantone\u00ae",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "135"
+    },
+    "VARTICLE_18711_": {
+        "name": "Fond paillet\u00e9",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "174"
+    },
+    "VARTICLE_18712_": {
+        "name": "Zone de grattage",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "187"
+    },
+    "VARTICLE_18713_": {
+        "name": "Hologramme",
+        "type": "checkbox",
+        "default": 0,
+        "values": {
+            "1": "Oui",
+            "0": "Non"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "182"
+    },
+    "VARTICLE_18630_": {
+        "name": "Couleur d'impression",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "1 couleur",
+            "2": "Blanc",
+            "4": "Quadri",
+            "5": "Quadri + blanc"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "165"
+    },
+    "VARTICLE_18628_": {
+        "name": "Face imprim\u00e9e",
+        "type": "select",
+        "default": "2",
+        "values": {
+            "2": "Recto verso",
+            "1": "Recto"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "163"
+    },
+    "VARTICLE_18644_": {
+        "name": "D\u00e9coupe",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "1": "Droite unitaire",
+            "2": "A la forme unitaire (selon trac\u00e9)"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "93"
+    },
+    "VARTICLE_18643_": {
+        "name": "Coins",
+        "type": "select",
+        "default": "2",
+        "values": {
+            "2": "Arrondis"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "149"
+    },
+    "VARTICLE_18645_": {
+        "name": "Code-barres unitaire",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "EAN 8 recto",
+            "2": "EAN 8 verso",
+            "3": "EAN 13 recto",
+            "4": "EAN 13 verso",
+            "5": "Code 39 recto",
+            "6": "Code 39 verso",
+            "9": "Code 128 recto",
+            "10": "Code 128 verso",
+            "7": "QR code recto",
+            "8": "QR code verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "200"
+    },
+    "VARTICLE_18715_": {
+        "name": "Envoi des donn\u00e9es variables",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Fichier Excel",
+            "2": "Num\u00e9rotation de d\u00e9part"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "201"
+    },
+    "VARTICLE_18717_": {
+        "name": "Code-barres num\u00e9rotation de d\u00e9part",
+        "type": "text",
+        "default": "",
+        "values": false,
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "204"
+    },
+    "VARTICLE_18658_": {
+        "name": "Num\u00e9rotation visible sous le code-barres",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "1": "-----",
+            "2": "Oui"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "205"
+    },
+    "VARTICLE_18654_": {
+        "name": "Personnalisation unitaire",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso",
+            "3": "Recto verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "212"
+    },
+    "VARTICLE_18716_": {
+        "name": "Envoi des donn\u00e9es variables",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Fichier Excel",
+            "2": "Num\u00e9rotation de d\u00e9part"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "214"
+    },
+    "VARTICLE_18718_": {
+        "name": "Num\u00e9rotation de d\u00e9part",
+        "type": "text",
+        "default": "",
+        "values": false,
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "216"
+    },
+    "VARTICLE_18663_": {
+        "name": "Couleur de la personnalisation unitaire",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "1": "Noire",
+            "4": "Blanche",
+            "3": "Or",
+            "2": "Argent",
+            "5": "Selon votre fichier de contr\u00f4le"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "218"
+    },
+    "VARTICLE_18655_": {
+        "name": "Vernis s\u00e9lectif",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso",
+            "3": "Recto verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "226"
+    },
+    "VARTICLE_19056_": {
+        "name": "Vernis s\u00e9lectif 3D",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "229"
+    },
+    "VARTICLE_18646_": {
+        "name": "Zone d'\u00e9criture",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso",
+            "3": "Recto verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "222"
+    },
+    "VARTICLE_18662_": {
+        "name": "Couleur de la zone d'\u00e9criture",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Blanche",
+            "2": "Transparente"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "223"
+    },
+    "VARTICLE_18647_": {
+        "name": "Embossage",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto (1 ligne)",
+            "2": "Recto (2 lignes)"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "232"
+    },
+    "VARTICLE_18719_": {
+        "name": "Envoi des donn\u00e9es variables",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Fichier Excel",
+            "2": "Num\u00e9rotation de d\u00e9part"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "233"
+    },
+    "VARTICLE_18720_": {
+        "name": "Num\u00e9rotation de d\u00e9part",
+        "type": "text",
+        "default": "",
+        "values": false,
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "234"
+    },
+    "VARTICLE_18679_": {
+        "name": "Couleur de l'embossage",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Or",
+            "2": "Argent",
+            "3": "Blanc",
+            "4": "Noir"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "236"
+    },
+    "VARTICLE_18648_": {
+        "name": "Overlay",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "239"
+    },
+    "VARTICLE_18681_": {
+        "name": "Collage overlay",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Petit c\u00f4t\u00e9",
+            "2": "Grand c\u00f4t\u00e9"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "240"
+    },
+    "VARTICLE_18999_": {
+        "name": "Collage overlay (accessoires)",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "1": "Petit c\u00f4t\u00e9",
+            "2": "Grand c\u00f4t\u00e9"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "1",
+        "position": "43"
+    },
+    "VARTICLE_18649_": {
+        "name": "Bande magn\u00e9tique",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "243"
+    },
+    "VARTICLE_18682_": {
+        "name": "Type de bande",
+        "type": "select",
+        "default": "",
+        "values": {
+            "0": "-----",
+            "1": "LOWCO",
+            "2": "HICO"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "244"
+    },
+    "VARTICLE_18683_": {
+        "name": "Type d'encodage",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "ISO 1",
+            "2": "ISO 2",
+            "3": "ISO 3"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "245"
+    },
+    "VARTICLE_18730_": {
+        "name": "Envoi des donn\u00e9es variables",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Fichier Excel",
+            "2": "Num\u00e9rotation de d\u00e9part"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "246"
+    },
+    "VARTICLE_18731_": {
+        "name": "Num\u00e9rotation de d\u00e9part",
+        "type": "text",
+        "default": "",
+        "values": false,
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "247"
+    },
+    "VARTICLE_18650_": {
+        "name": "Dorure \u00e0 chaud",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso",
+            "3": "Recto verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "250"
+    },
+    "VARTICLE_18688_": {
+        "name": "Couleur de la dorure",
+        "type": "select",
+        "default": "1",
+        "values": {
+            "0": "-----",
+            "1": "Or",
+            "2": "Argent"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "251"
+    },
+    "VARTICLE_18651_": {
+        "name": "Perforation",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Ronde",
+            "2": "Oblongue (rectangle \u00e0 coins arrondis)"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "257"
+    },
+    "VARTICLE_18689_": {
+        "name": "Lieu de la perforation",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Petit c\u00f4t\u00e9 droit (centr\u00e9e \u00e0 3mm du bord)",
+            "2": "Petit c\u00f4t\u00e9 gauche (centr\u00e9e \u00e0 3mm du bord)",
+            "4": "Grand c\u00f4t\u00e9 haut (centr\u00e9e \u00e0 3mm du bord)",
+            "5": "Grand c\u00f4t\u00e9 bas (centr\u00e9e \u00e0 3mm du bord)",
+            "3": "Lieu sp\u00e9cifique (\u00e0 3mm du bord)",
+            "6": "Petit c\u00f4t\u00e9 haut"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "258"
+    },
+    "VARTICLE_19791_": {
+        "name": "Attache badge",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Pince crocodile + \u00e9pingle",
+            "2": "Porte-badge \u00e0 pince"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "254"
+    },
+    "VARTICLE_18652_": {
+        "name": "Couleur Pantone\u00ae",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso",
+            "3": "Recto verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "264"
+    },
+    "VARTICLE_18729_": {
+        "name": "Code couleur Pantone\u00ae",
+        "type": "text",
+        "default": "",
+        "values": false,
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "265"
+    },
+    "VARTICLE_18692_": {
+        "name": "Fond paillet\u00e9",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso",
+            "3": "Recto verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "268"
+    },
+    "VARTICLE_18693_": {
+        "name": "Code couleur Pantone\u00ae",
+        "type": "text",
+        "default": "",
+        "values": false,
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "269"
+    },
+    "VARTICLE_18694_": {
+        "name": "Couleur des paillettes",
+        "type": "select",
+        "default": "",
+        "values": {
+            "0": "-----",
+            "1": "Or",
+            "2": "Argent"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "270"
+    },
+    "VARTICLE_18653_": {
+        "name": "Zone de grattage",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "261"
+    },
+    "VARTICLE_18657_": {
+        "name": "Hologramme",
+        "type": "select",
+        "default": "0",
+        "values": {
+            "0": "-----",
+            "1": "Recto",
+            "2": "Verso"
+        },
+        "readonly": false,
+        "quantity": false,
+        "production_time": false,
+        "area": "2",
+        "position": "273"
+    }
+}

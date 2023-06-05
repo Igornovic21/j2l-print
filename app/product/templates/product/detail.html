@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bread-inner">
+					<ul class="bread-list">
+						<li><a href="{% url 'index' %}">Acceuil<i class="ti-arrow-right"></i></a></li>
+						<li class="active"><a href="#">{{ category.name }}<i class="ti-arrow-right"></i></a></li>
+						<li class="active"><a href="#">{{ category.name }}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Breadcrumbs -->
+
+<form method='POST'>
+  {% csrf_token %}
+  <section class="py-5">
+    <div class="container">
+      <div class="slides">
+      <div class="row">
+        <div class="col-lg-5">
+          <img id="cover" src="{{ images.0 }}" class="rounded mx-auto d-block mb-3" alt="cover">
+
+          <div class="d-flex justify-content-center">
+            <div class="owl-carousel popular-slider">
+              {% if images %}
+                {% for image in images %}
+                  <img width="10" height="10" class="rounded mx-auto d-block p-3 image-carousel" src="{{image}}"/>
+                {% endfor %}
+              {% else %}
+                <p class="text-center">image indisponible</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="border rounded mb-5 p-3">
+            {% for variable in first_zone_variables %}
+              {% if variable.type == "select" %}
+                <div class="row">
+                  <label for={{ variable.id }} class="col-4 col-form-label">{{ variable.name }}</label>
+                  <div class="col-8">
+                    <select id={{ variable.id }} class="form-select w-100">
+                      {% for k, v in variable.values.items %}
+                        <option value={{ k }}>{{ v }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          
+          <div class="border rounded mb-5 p-3">
+            <div class="row row-cols-lg-3">
+              {% for variable in second_zone_variables %}
+                {% if variable.type == "select" %}
+                    <div class="col">Column</div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+      {% comment %} <div>
+        <button class="btn btn-primary shadow-0" type="submit">DEVIS EXPRESS</button>
+      </div> {% endcomment %}
+    </div>
+  </section>
+</form>
+{% endblock content %}
+
+{% block script %}
+<script src="{% static 'product/js/image-carousel.js' %}"></script>
+{% endblock script %}

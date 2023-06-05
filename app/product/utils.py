@@ -20,3 +20,17 @@ def insert_product():
             product_obj, _ = Product.objects.get_or_create(ref=product['id'], name=product['name'], category=category_obj)
             print(product_obj)
             print(_)
+
+
+class Variables:
+    def __init__(self, id, name, type, default, values, readonly, quantity, production_time, area, position) -> None:
+        self.id = id
+        self.name = name
+        self.type = type
+        self.default = default
+        self.values = values
+        self.readonly = readonly
+        self.quantity = quantity
+        self.production_time = production_time
+        self.area = area
+        self.position = position

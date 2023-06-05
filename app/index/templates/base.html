@@ -41,7 +41,9 @@
         <!-- Eshop StyleSheet -->
         <link rel="stylesheet" href="{% static 'index/css/reset.css' %}">
         <link rel="stylesheet" href="{% static 'index/style.css' %}">
-        <link rel="stylesheet" href="{% static 'index/css/responsive.css' %}">	
+        <link rel="stylesheet" href="{% static 'index/css/responsive.css' %}">
+
+        {% block style %}{% endblock style %}
     </head>
     <body class="js">
         
@@ -188,13 +190,13 @@
                                                 <ul class="nav main-menu menu navbar-nav">
                                                         <li class="active"><a href="{% url 'index' %}">Accueil</a></li>
                                                         {% for category in categories %}
-                                                        <li><a href="{% url 'product' category %}">{{ category }}</a></li>	
+                                                        <li><a href="{% url 'product' category.to_url %}">{{ category }}</a></li>	
                                                         {% endfor %}
                                                         <li>
                                                             <a href="#">Encore plus<i class="ti-angle-down"></i></a>
                                                             <ul class="dropdown">
                                                                 {% for category in more_categories %}
-                                                                <li><a href="{% url 'product' category %}">{{ category }}</a></li>
+                                                                <li><a href="{% url 'product' category.to_url %}">{{ category }}</a></li>
                                                                 {% endfor %}
                                                             </ul>
                                                         </li>
@@ -276,8 +278,9 @@
             </div>
         </footer>
         <!-- /End Footer Area -->
-    
+        
         <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="{% static 'index/js/jquery.min.js' %}"></script>
         <script src="{% static 'index/js/jquery-migrate-3.0.0.js' %}"></script>
         <script src="{% static 'index/js/jquery-ui.min.js' %}"></script>
@@ -285,8 +288,6 @@
         <script src="{% static 'index/js/popper.min.js' %}"></script>
         <!-- Bootstrap JS -->
         <script src="{% static 'index/js/bootstrap.min.js' %}"></script>
-        <!-- Color JS -->
-        <script src="{% static 'index/js/colors.js' %}"></script>
         <!-- Slicknav JS -->
         <script src="{% static 'index/js/slicknav.min.js' %}"></script>
         <!-- Owl Carousel JS -->
@@ -309,5 +310,7 @@
         <script src="{% static 'index/js/easing.js' %}"></script>
         <!-- Active JS -->
         <script src="{% static 'index/js/active.js' %}"></script>
+
+        {% block script %}{% endblock script %}
     </body>
 </html>
