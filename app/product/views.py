@@ -1,4 +1,5 @@
 import os
+import json
 import requests
 
 from django.shortcuts import render
@@ -63,9 +64,11 @@ def detail(request, category_name, product_name):
     
     first_zone_variables = []
     second_zone_variables = []
+    session_variables = []
     
     for k, v in config_response.json()["variables"].items():
         if k in show_variables:
+            session_variables.append({k: v})
             if v["area"] == "1":
                 first_zone_variables.append(
                     Variables(id=k, name=v["name"], type=v["type"], default=v["default"],
@@ -76,26 +79,17 @@ def detail(request, category_name, product_name):
                     Variables(id=k, name=v["name"], type=v["type"], default=v["default"],
                             values=v["values"], readonly=v["readonly"], quantity=v["quantity"],
                             production_time=v["production_time"], area=v["area"], position=v["position"]))
-
-    # print(first_zone_variables[0].id)
-    # print(first_zone_variables[0].name)
-    # print(first_zone_variables[0].type)
-    # print(first_zone_variables[0].default)
-    # print(first_zone_variables[0].values)
-    # print(first_zone_variables[0].readonly)
-    # print(first_zone_variables[0].quantity)
-    # print(first_zone_variables[0].production_time)
-    # print(first_zone_variables[0].area)
-    # print(first_zone_variables[0].position)
+    
+    request.session.setdefault('variables', session_variables)
     
     context = {
         "categories": categories,
         "more_categories": more_categories,
         "category": category,
+        "product": product,
         "first_zone_variables": first_zone_variables,
         "second_zone_variables": second_zone_variables,
         "images": images,
     }
     
     return render(request, 'product/detail.html', context)
-    
