@@ -23,7 +23,7 @@
 <!-- End Breadcrumbs -->
 
 
-<!-- Start Contact -->
+<!-- Start Checkout -->
 <section id="contact-us" class="contact-us section">
 	<div class="container">
 			<div class="contact-head">
@@ -33,60 +33,61 @@
                         <h3>Entreprise, Associations ou Collectivités ?</h3>
                         <h3>Faites vos dévis express gratuitement en 1 clic.</h3>
                     </div>
-                    <form class="form" method="post">
+                    <form class="form" method="post" action="{% url 'estimate' category.to_url product.to_url %}">
+                        {% csrf_token %}
                         <div class="row">
                             <div class="col-lg-6 col-12">
                                 <div class="form-group">
-                                    <label for="name">Nom<span>*</span></label>
-                                    <input name="name" type="text" placeholder="" required>
+                                    <label for="id_first_name">Nom<span>*</span></label>
+                                    {{ form.first_name }}
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="form-group">
-                                    <label for="prenom">Prénom<span>*</span></label>
-                                    <input name="prenom" type="text" placeholder="" required>
+                                    <label for="id_last_name">Prénom<span>*</span></label>
+                                    {{ form.last_name }}
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="form-group">
-                                    <label for="email">Email<span>*</span></label>
-                                    <input name="email" type="email" placeholder="" required>
+                                    <label for="id_email">Email<span>*</span></label>
+                                    {{ form.email }}
                                 </div>	
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="form-group">
-                                    <label for="company_name">Organisation<span>*</span></label>
-                                    <input name="company_name" type="text" placeholder="" required>
+                                    <label for="id_organisation">Organisation<span>*</span></label>
+                                    {{ form.organisation }}
                                 </div>	
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="form-group">
-                                    <label for="phone">Téléphone<span>*</span></label>
-                                    <input name="phone" type="tel" placeholder="" required>
+                                    <label for="id_phone">Téléphone<span>*</span></label>
+                                    {{ form.phone }}
                                 </div>	
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="form-group">
-                                    <label for="address">Addresse<span>*</span></label>
-                                    <input name="address" type="text" placeholder="" required>
+                                    <label for="id_address">Addresse<span>*</span></label>
+                                    {{ form.address }}
                                 </div>	
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="form-group">
-                                    <label for="postal">Code postal<span>*</span></label>
-                                    <input name="postal" type="text" placeholder="" required>
+                                    <label for="id_postal_code">Code postal<span>*</span></label>
+                                    {{ form.postal_code }}
                                 </div>	
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="form-group">
-                                    <label for="city">Ville<span>*</span></label>
-                                    <input name="city" type="text" placeholder="" required>
+                                    <label for="id_city">Ville<span>*</span></label>
+                                    {{ form.city }}
                                 </div>	
                             </div>
                             <div class="col-12">
                                 <div class="form-group message">
-                                    <label for="message">votre message<span>*</span></label>
-                                    <textarea name="message" placeholder="" required></textarea>
+                                    <label for="id_message">votre message<span>*</span></label>
+                                    {{ form.message }}
                                 </div>
                             </div>
                             <div class="col-12">
@@ -100,5 +101,5 @@
 			</div>
 		</div>
 </section>
-<!--/ End Contact -->
+<!--/ End Checkout -->
 {% endblock content %}

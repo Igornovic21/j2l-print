@@ -6,4 +6,4 @@ class UserEstimateForm(forms.ModelForm):
     
     class Meta:
         model = UserEstimate
-        fiels = "__all__"
+        fields = ['first_name', 'last_name', 'email', 'organisation', 'phone', 'address', 'postal_code', 'city', 'message']

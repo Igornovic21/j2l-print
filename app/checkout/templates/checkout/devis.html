@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bread-inner">
+					<ul class="bread-list">
+						<li><a href="{% url 'index' %}">Acceuil<i class="ti-arrow-right"></i></a></li>
+						<li><a href="#">{{ category.name }}<i class="ti-arrow-right"></i></a></li>
+						<li><a href="{% url 'detail' category.to_url product.to_url %}">{{ product.name }}<i class="ti-arrow-right"></i></a></li>
+						<li class="active"><a href="#">Dévis<i class="ti-arrow-right"></i></a></li>
+						<li class="active"><a href="#">Statut</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Breadcrumbs -->
+
+
+<!-- Start Devis -->
+<p>Success</p>
+<!--/ End Devis -->
+{% endblock content %}
